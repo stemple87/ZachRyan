@@ -15,6 +15,7 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -29,16 +30,21 @@
                 <a asp-controller="Home" asp-action="Index" class="navbar-brand">ZachRyan</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-controller="Home" asp-action="Video">Video</a></li>
+                    <li><a asp-controller="Home" asp-action="News">News</a></li>
+                    <li><a asp-controller="Home" asp-action="Photos">Photos</a></li>
+                    <li><a asp-controller="Home" asp-action="Stream">Stream</a></li>
+                    <li><a asp-controller="Home" asp-action="Tour">Tour</a></li>
+                    <li><a asp-controller="Home" asp-action="Sign_Up">Sign Up</a></li>
                     <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
         <hr />
         <footer>

@@ -38,7 +38,9 @@
       "version": "1.0.0-preview1-final",
       "type": "build"
     },
-    "VisualStudio.gitignore": "1.0.1"
+    "VisualStudio.gitignore": "1.0.1",
+    "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3",
+    "materialize": "0.97.6"
   },
 
   "tools": {
